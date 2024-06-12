@@ -971,7 +971,7 @@ input.main-search-input::placeholder {
   color: var(--white) !important;
 }
 .header-main .main-menu ul li .submenu li:hover > a::after {
-  color: var(--theme);
+  color: #B04E31;
 }
 .header-main .main-menu ul li .submenu li:hover > .submenu {
   transform: translateY(1);
@@ -983,7 +983,7 @@ input.main-search-input::placeholder {
   top: 50%;
   inset-inline-end: 25px;
   transform: translateY(-50%);
-  color: var(--theme);
+  color: #B04E31;
 }
 .header-main .main-menu ul li .has-homemenu {
   width: 1100px;
@@ -7276,7 +7276,7 @@ input.main-search-input::placeholder {
 }
 .blog-wrapper .single-blog-post.quote-post .post-content, .blog-wrapper .single-blog-post.format-quote .post-content {
   position: relative;
-  background-color: var(--theme);
+  background-color: #282835;
   border: none;
 }
 .blog-wrapper .single-blog-post.quote-post .post-content::before, .blog-wrapper .single-blog-post.format-quote .post-content::before {
@@ -7341,16 +7341,16 @@ input.main-search-input::placeholder {
   width: 100%;
   position: relative;
   margin-bottom: -2px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .blog-wrapper .single-blog-post .post-featured-thumb .post-date {
   position: absolute;
   top: 20px;
   left: 20px;
   padding: 15px 30px;
-  background-color: var(--theme);
+  background-color: #B04E31;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .blog-wrapper .single-blog-post .post-featured-thumb .post-date h4 {
   color: var(--white);
@@ -7405,7 +7405,7 @@ input.main-search-input::placeholder {
   }
 }
 .blog-wrapper .single-blog-post .post-content h2 a:hover {
-  color: var(--theme);
+  color: #B04E31;
 }
 .blog-wrapper .single-blog-post .post-content p {
   font-size: 16px;
@@ -7505,7 +7505,7 @@ input.main-search-input::placeholder {
 }
 .blog-wrapper .single-blog-post .post-content .post-meta span i {
   margin-right: 5px;
-  color: var(--theme);
+  color: #B04E31;
   font-weight: 700;
 }
 .blog-wrapper .single-blog-post .post-content .author-info {
@@ -7590,7 +7590,7 @@ input.main-search-input::placeholder {
   text-transform: capitalize;
 }
 .news-area .main-sidebar .single-sidebar-widget ul > li a:hover {
-  color: var(--theme);
+  color: #B04E31;
 }
 .news-area .main-sidebar .single-sidebar-widget ul ul {
   padding-left: 20px;
@@ -7624,7 +7624,7 @@ input.main-search-input::placeholder {
   content: "";
   height: 4px;
   width: 4px;
-  border-radius: 50%;
+  border-radius: 0%;
   position: absolute;
   background-color: var(--theme);
 }
@@ -7638,14 +7638,14 @@ input.main-search-input::placeholder {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 0%;
   background-color: var(--bg);
   font-size: 14px;
   margin-right: 5px;
   margin-bottom: 5px;
 }
 .news-area .main-sidebar .single-sidebar-widget .social-link a:hover {
-  background-color: var(--theme);
+  background-color: #B04E31;
   color: var(--white);
 }
 
@@ -7669,7 +7669,7 @@ input.main-search-input::placeholder {
   width: 70px;
   font-size: 18px;
   height: 100%;
-  background-color: var(--theme);
+  background-color: #B04E31;
   color: var(--white);
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -7712,7 +7712,7 @@ input.main-search-input::placeholder {
 }
 .popular-posts .single-post-item .post-content .post-date, .popular_posts .single-post-item .post-content .post-date {
   margin-top: 10px;
-  color: var(--theme);
+  color: #B04E31;
   font-weight: 600;
   font-size: 15px;
   text-transform: capitalize;
@@ -7750,7 +7750,7 @@ input.main-search-input::placeholder {
   line-height: 55px;
   height: 100%;
   content: "";
-  background-color: var(--theme);
+  background-color: #B04E31;
   right: 0;
   top: 0;
   text-align: center;
@@ -7772,7 +7772,7 @@ input.main-search-input::placeholder {
   margin-right: 0;
 }
 .tagcloud a:hover {
-  background-color: var(--theme);
+  background-color: #B04E31;
   color: var(--white);
 }
 
@@ -7800,7 +7800,7 @@ p.sticky-label {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  border-radius: 50%;
+  border-radius: 0%;
   background: #f6f6f6;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
@@ -7823,7 +7823,7 @@ p.sticky-label {
   margin-top: 2px;
 }
 .page-nav-wrap ul li .page-numbers:hover {
-  background-color: var(--theme);
+  background-color: #B04E31;
   color: var(--white);
 }
 
