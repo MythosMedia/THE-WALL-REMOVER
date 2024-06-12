@@ -1438,7 +1438,7 @@ input.main-search-input::placeholder {
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .sticky.header-2 {
-  background-color: #060606;
+  background-color: #253042;
 }
 .sticky .header-main .main-menu ul li {
   padding: 20px 0;
@@ -4432,7 +4432,7 @@ input.main-search-input::placeholder {
 }
 
 .footer-bg {
-  background-color: var(--black);
+  background-color: #253042;
 }
 
 .background-black {
@@ -8930,7 +8930,7 @@ p.sticky-label {
   width: 10px;
   height: 2px;
   content: "";
-  background-color: var(--theme);
+  background-color: #B04E31;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
