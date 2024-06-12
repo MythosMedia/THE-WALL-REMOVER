@@ -1064,7 +1064,7 @@ input.main-search-input::placeholder {
   font-size: 16px;
 }
 .header-main .main-menu ul li:hover > a {
-  color: var(--theme);
+  color: #B04E31;
 }
 .header-main .main-menu ul li:hover > a::after {
   color: var(--theme);
@@ -4616,7 +4616,7 @@ input.main-search-input::placeholder {
   line-height: 50px;
   text-align: center;
   display: inline-block;
-  background: var(--header);
+  background: #253042;
   color: var(--white);
   transition: all 0.3s ease-in-out;
   border-radius: 0px;
@@ -5699,6 +5699,7 @@ input.main-search-input::placeholder {
   border: 1px solid var(--theme);
   display: inline-block;
   margin-top: 40px;
+  background-color: #B04E31;
 }
 .faq-wrapper .faq-box-area .box-items {
   display: flex;
@@ -5714,6 +5715,13 @@ input.main-search-input::placeholder {
 .faq-wrapper .faq-box-area .box-items .content h3 {
   font-size: 28px;
   font-weight: 700;
+  color: white;
+}
+.faq-wrapper .faq-box-area .box-items .content h4 {
+  color: white;
+}
+.faq-wrapper .faq-box-area  p {
+  color: white;
 }
 .faq-wrapper .accordion-item {
   border: none !important;
@@ -5808,7 +5816,7 @@ input.main-search-input::placeholder {
 }
 
 .cta-banner-wrapper {
-  background-color: var(--black);
+  background-color: #253042;
   padding: 60px 120px;
   display: flex;
   align-items: center;
@@ -5849,7 +5857,7 @@ input.main-search-input::placeholder {
   content: "";
   width: 180px;
   height: 390px;
-  background-image: linear-gradient(180deg, #A6A182 0%, rgba(166, 161, 130, 0) 100%);
+  background-image: linear-gradient(180deg, #B04E31 0%,rgb(176, 78, 49,0.08) 100%);
   z-index: -1;
   transform: rotate(15deg);
   bottom: 0;
@@ -8855,12 +8863,14 @@ p.sticky-label {
   line-height: 40px;
   border-radius: 0px;
   display: inline-block;
-  background-color: #0D0D0D;
+  background-color: #b04f31ab;
+
   color: rgba(255, 255, 255, 0.7019607843);
   transition: all 0.4s ease-in-out;
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .social-icon a:hover {
   background-color: #B04E31;
+
   color: var(--white);
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .contact-info-area .contact-items {
@@ -8875,9 +8885,7 @@ p.sticky-label {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border: 1px solid #B04E31;
   color: rgba(255, 255, 255, 0.7019607843);
-  border-radius: 0%;
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .contact-info-area .contact-items .content {
   flex-basis: 79%;
