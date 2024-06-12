@@ -950,7 +950,7 @@ input.main-search-input::placeholder {
   z-index: 11;
   font-size: 16px;
   font-weight: 500;
-  color: var(--header);
+  color: #B04E31;
   padding: 0 25px;
   padding-bottom: 11px;
   padding-top: 11px;
@@ -1545,7 +1545,7 @@ input.main-search-input::placeholder {
   display: block;
   background: transparent;
   color: var(--header);
-  border-radius: 50%;
+  border-radius: 0%;
   transition: all 0.4s ease-in-out;
   text-align: center;
   border: 1px solid var(--border);
@@ -6053,7 +6053,7 @@ input.main-search-input::placeholder {
 
 .cta-banner-wrapper-2 {
   background-color: #B04E31;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 75px 60px;
   position: relative;
   margin-top: 70px;
@@ -8678,7 +8678,7 @@ p.sticky-label {
   line-height: 45px;
   border-radius: 50%;
   background-color: rgba(166, 161, 130, 0.1);
-  color: var(--theme);
+  color: #B04E31;
   text-align: center;
 }
 .contact-info-wrapper .contact-info-content .contact-info-area .contact-info-items .content {
@@ -8716,7 +8716,7 @@ p.sticky-label {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 0 80px 0;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .contact-wrapper-3 .contact-content {
   background-color: var(--white);
@@ -8948,10 +8948,10 @@ p.sticky-label {
 }
 .footer-widgets-wrapper.style-2 .single-footer-widget .footer-content .social-icon a {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+  border-radius: 0%;
 }
 .footer-widgets-wrapper.style-2 .single-footer-widget .footer-content .social-icon a:hover {
-  background-color: var(--theme);
+  background-color: #B04E31;
   color: var(--white);
 }
 .footer-widgets-wrapper.style-2 .single-footer-widget .list-items li i {
