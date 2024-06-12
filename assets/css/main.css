@@ -489,7 +489,7 @@ input.main-search-input::placeholder {
   top: 50px;
   right: 50px;
   font-size: 30px;
-  color: var(--theme);
+  color: #B04E31;
   cursor: pointer;
 }
 
@@ -647,7 +647,7 @@ input.main-search-input::placeholder {
 }
 
 .section-bg-2 {
-  background-color: var(--bg2);
+  background-color: #253042;
 }
 
 .section-padding {
@@ -1651,7 +1651,7 @@ input.main-search-input::placeholder {
   transition: all 0.4s ease-in-out;
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items li a:hover {
-  color: var(--theme);
+  color: #B04E31;
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items li i {
   color: var(--white);
@@ -6052,7 +6052,7 @@ input.main-search-input::placeholder {
 }
 
 .cta-banner-wrapper-2 {
-  background-color: var(--theme);
+  background-color: #B04E31;
   border-radius: 5px;
   padding: 75px 60px;
   position: relative;
@@ -6119,7 +6119,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: var(--bg2);
+  background-color: #253042;
   top: 50%;
 }
 
@@ -7020,8 +7020,8 @@ input.main-search-input::placeholder {
   height: 50px;
   border-radius: 0%;
   line-height: 50px;
-  border: 1px solid #B04E31;
-  color: #B04E31;
+  border: 1px solid #253042;
+  color: #253042;
   font-weight: bold;
 }
 .section-title-area .array-prev:hover {
@@ -7035,8 +7035,8 @@ input.main-search-input::placeholder {
   height: 50px;
   border-radius: 0%;
   line-height: 50px;
-  border: 1px solid #B04E31;
-  color: #B04E31;
+  border: 1px solid #253042;
+  color:#253042;
   font-weight: bold;
 }
 .section-title-area .array-next:hover {
@@ -8228,7 +8228,7 @@ p.sticky-label {
 }
 .portfolio-items .portfolio-image .portfolio-content .icon:hover {
   background-color: var(--white);
-  color: var(--theme);
+  color: #253042;
 }
 .portfolio-items .portfolio-image .portfolio-content h3 {
   margin-bottom: 10px;
@@ -8956,7 +8956,7 @@ p.sticky-label {
 }
 .footer-widgets-wrapper.style-2 .single-footer-widget .list-items li i {
   margin-right: 10px;
-  color: var(--theme);
+  color: #B04E31;
 }
 
 .footer-bottom {
