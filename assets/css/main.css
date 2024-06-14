@@ -12,7 +12,7 @@ Version: 1.0.0
   --white: #fff;
   --theme: #A6A182;
   --theme-2: #A6A182;
-  --header: #000000;
+  --header: #253042;
   --base: #00813D;
   --text: #54595F;
   --text2: #bfbfbf;
@@ -2973,13 +2973,13 @@ input.main-search-input::placeholder {
   position: relative;
 }
 .work-process-wrapper.style-2 .work-process-items-2 .work-process-content h3 {
-  color: var(--header);
+  color: #253042;
 }
 .work-process-wrapper.style-2 .work-process-items-2 .work-process-content .number {
   -webkit-text-stroke-color: var(--black);
 }
 .work-process-wrapper.style-2 .work-process-items-2 .work-process-content p {
-  color: var(--text);
+  color:#253042;
 }
 
 .counter-wrapper {
