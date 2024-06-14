@@ -307,8 +307,8 @@ p {
 .preloader .animation-preloader .spinner {
   animation: spinner 1s infinite linear;
   border-radius: 50%;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: var(--theme);
+  border: 3px solid #b04f3121;
+  border-top-color: #B04E31;
   height: 9em;
   margin: 0 auto 3.5em auto;
   width: 9em;
@@ -333,7 +333,7 @@ p {
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
-  color: var(--theme);
+  color:#B04E31;
   position: relative;
 }
 .preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
@@ -373,7 +373,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 8px;
-  color: var(--theme);
+  color: #B04E31;
 }
 .preloader .loader {
   position: fixed;
