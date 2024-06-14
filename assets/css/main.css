@@ -5701,6 +5701,9 @@ input.main-search-input::placeholder {
 .faq-section {
   position: relative;
 }
+.faq-content{
+  padding: 60px 0;
+}
 
 .faq-wrapper .faq-box-area {
   padding: 30px 50px 30px 30px;
