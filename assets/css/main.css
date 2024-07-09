@@ -1862,9 +1862,9 @@ input.main-search-input::placeholder {
   display: none;
 }
 .hero-1 .hero-image-2 {
-  position: absolute;
-  top: 55.5%;
-  left: 17%;
+	position: absolute;
+	top: 50.5%;
+	left: 12%;
 }
 @media (max-width: 1199px) {
   .hero-1 .hero-image-2 {
@@ -2006,7 +2006,7 @@ input.main-search-input::placeholder {
 }
 .hero-1 .hero-image {
   max-width: 660px;
-  height: 750px;
+  height: 720px;
   margin-left: -120px;
   position: relative;
   border-radius: 0px;
@@ -9160,4 +9160,90 @@ p.sticky-label {
 .footer-section .bg-shape img {
   width: 100%;
   height: 100%;
+}
+
+/* CSS */
+@media (max-width: 993px) {
+  .hero-image-2 {
+    display: none;
+  }
+}
+.custom-hero-section .hero-content h1 {
+  font-size: 2rem; /* Default size for smaller screens */
+  text-align: center; /* Center-align text by default */
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .custom-hero-section .hero-content h1 {
+      font-size: 2rem; /* Font size for screens between 768px and 1399px */
+  }
+}
+
+@media (min-width: 1400px) {
+  .custom-hero-section .hero-content h1 {
+      font-size: 3rem; /* Larger size for screens 1400px and above */
+  }
+}
+
+@media (min-width: 989px) {
+  .custom-hero-section .hero-content h1 {
+      text-align: left; /* Left-align text for screens 989px and above */
+  }
+}
+
+.custom-hero-section .hero-image {
+  background-position: inherit;
+}
+
+.custom-hero-section .row {
+  justify-content: center; /* Center the columns */
+  gap: 30px; /* Adjust the gap between columns */
+}
+
+@media (max-width: 767px) {
+  .custom-hero-section .row {
+      gap: 15px; /* Smaller gap for smaller screens */
+  }
+
+  .custom-hero-section .col-lg-6,
+  .custom-hero-section .col-lg-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .custom-hero-section .hero-content h1,
+  .custom-hero-section .hero-content p {
+      text-align: center !important; /* Center-align text for smaller screens */
+  }
+}
+
+@media (max-width: 988px) {
+  .custom-hero-section .hero-content p {
+      text-align: center !important; /* Center-align paragraph for screens 988px and below */
+  }
+}
+.custom-hero-section .hero-image {
+  background-position: inherit;
+}
+
+.custom-hero-section .row {
+  justify-content: center; /* Center the columns */
+  gap: 30px; /* Adjust the gap between columns */
+}
+
+@media (max-width: 767px) {
+  .custom-hero-section .row {
+      gap: 15px; /* Smaller gap for smaller screens */
+  }
+
+  .custom-hero-section .col-lg-6,
+  .custom-hero-section .col-lg-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .custom-hero-section .hero-content h1,
+  .custom-hero-section .hero-content p {
+      text-align: center; /* Center-align text for smaller screens */
+  }
 }
