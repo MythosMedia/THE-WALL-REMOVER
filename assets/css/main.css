@@ -2610,6 +2610,23 @@ input.main-search-input::placeholder {
   z-index: 9;
   border-radius: 0px;
 }
+
+.work-process-items .icon img {
+  filter: brightness(0); /* Makes the SVG black */
+  transition: all 0.4s ease-in-out;
+}
+
+.work-process-items:hover .icon img {
+  filter: brightness(1); /* Makes the SVG white */
+}
+
+.work-process-items2 .icon img {
+  filter: brightness(1); /* Makes the SVG white by default for work-process-items2 */
+}
+
+.work-process-items2:hover .icon img {
+  filter: brightness(0); /* Makes the SVG black on hover for work-process-items2 */
+}
 @media (max-width: 575px) {
   .work-process-items {
     padding: 30px;
