@@ -3679,7 +3679,7 @@ input.main-search-input::placeholder {
 }
 
 .service-wrapper .service-image {
-  max-width: 615px;
+  min-width: 615px;
   height: 740px;
   margin-right: -100%;
   /* margin-top: -120px; */
@@ -6502,7 +6502,7 @@ input.main-search-input::placeholder {
 @media (max-width: 991px) {
   .testimonial-wrapper .testimonial-image {
     width: initial;
-    max-width: 850px;
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {
