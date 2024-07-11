@@ -9189,6 +9189,7 @@ p.sticky-label {
 .custom-hero-section .hero-content h1 {
   font-size: 2rem; /* Default size for smaller screens */
   text-align: center; /* Center-align text by default */
+  font-weight: 800 !important;
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
@@ -9199,7 +9200,7 @@ p.sticky-label {
 
 @media (min-width: 1400px) {
   .custom-hero-section .hero-content h1 {
-      font-size: 3rem; /* Larger size for screens 1400px and above */
+      font-size: 2.5rem; /* Larger size for screens 1400px and above */
   }
 }
 
