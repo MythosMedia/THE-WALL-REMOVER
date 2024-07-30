@@ -9266,7 +9266,6 @@ p.sticky-label {
       text-align: center; /* Center-align text for smaller screens */
   }
 }
-
 .portfolio-image-container {
   position: relative;
   width: 100%;
@@ -9292,12 +9291,14 @@ p.sticky-label {
   transition: transform 0.7s, opacity 0.7s;
 }
 
-.portfolio-image-container:hover .portfolio-image {
+.portfolio-image-container:hover .portfolio-image,
+.portfolio-image-container.auto-hover .portfolio-image {
   transform: rotateY(90deg);
   opacity: 0;
 }
 
-.portfolio-image-container:hover .portfolio-image.new-image {
+.portfolio-image-container:hover .portfolio-image.new-image,
+.portfolio-image-container.auto-hover .portfolio-image.new-image {
   transform: rotateY(0deg);
   opacity: 1;
 }
@@ -9313,4 +9314,7 @@ p.sticky-label {
   z-index: 1;
   width: 100%;
   text-align: center;
+}
+.p-t-b{
+  padding: 0px 30px
 }

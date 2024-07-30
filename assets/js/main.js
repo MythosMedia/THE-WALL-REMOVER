@@ -607,3 +607,30 @@
     
 })(jQuery); // End jQuery
 
+document.addEventListener("DOMContentLoaded", function() {
+    var portfolioItems = document.querySelectorAll('.portfolio-image-container');
+  
+    function autoSwitchImages() {
+      portfolioItems.forEach(function(item) {
+        item.classList.toggle('auto-hover');
+      });
+    }
+  
+    // Function to check if the device is mobile or tablet
+    function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+  
+    if (isMobileDevice()) {
+      // Auto switch images every 2 seconds for mobile devices
+      setInterval(autoSwitchImages, 2000);
+  
+      // Remove auto-hover class when touching the container
+      portfolioItems.forEach(function(item) {
+        item.addEventListener('touchstart', function() {
+          item.classList.remove('auto-hover');
+        });
+      });
+    }
+  });
+  
