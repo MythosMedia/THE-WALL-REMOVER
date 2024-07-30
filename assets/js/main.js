@@ -618,7 +618,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Function to check if the device is mobile or tablet
     function isMobileDevice() {
-      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      return window.innerWidth <= 768;
     }
   
     if (isMobileDevice()) {
