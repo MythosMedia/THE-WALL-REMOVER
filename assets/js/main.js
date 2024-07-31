@@ -634,3 +634,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      emailjs.sendForm('service_ksluw1u', 'template_7t7ot57', this)
+          .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              alert('Your message has been sent successfully!');
+          }, function(error) {
+              console.log('FAILED...', error);
+              alert('Failed to send your message. Please try again.');
+          });
+  });
