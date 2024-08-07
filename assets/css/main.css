@@ -2662,7 +2662,7 @@ input.main-search-input::placeholder {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/img/process-bg2.jpg);
+  background-image: url(../../assets/img/breadcrumb-2.jpg);
   z-index: -1;
   border-radius: 0px;
   opacity: 0;
