@@ -873,7 +873,7 @@ input.main-search-input::placeholder {
 .header-top-wrapper .top-right {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 30px;
 }
 .header-top-wrapper .top-right .social-icon {
   gap: 25px;
