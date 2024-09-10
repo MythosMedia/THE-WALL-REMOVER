@@ -1,0 +1,32 @@
+.preload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* Adjust based on your preference */
+  }
+  
+  .rotate-animation {
+    animation: rotateKnock 1s infinite ease-in-out;
+    width: 300px; /* Adjust the size as needed */
+  }
+  
+  /* Keyframes for rotating animation */
+  @keyframes rotateKnock {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
