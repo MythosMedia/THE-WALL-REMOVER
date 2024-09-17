@@ -7584,7 +7584,7 @@ input.main-search-input::placeholder {
   top: 0;
   font-family: "Font Awesome 5 Pro";
   content: "\f00c";
-  color: var(--theme);
+  color: #a64c32;
 }
 .blog-wrapper .single-blog-post .post-content ol {
   margin-bottom: 0;
@@ -7732,7 +7732,7 @@ input.main-search-input::placeholder {
   width: 18px;
   border-radius: 5px;
   position: absolute;
-  background-color: var(--theme);
+  background-color: #a64c32;
 }
 .news-area .main-sidebar .single-sidebar-widget .wid-title::after {
   left: 22px;
@@ -7743,7 +7743,7 @@ input.main-search-input::placeholder {
   width: 4px;
   border-radius: 0%;
   position: absolute;
-  background-color: var(--theme);
+  background-color: #a64c32;
 }
 .news-area .main-sidebar .single-sidebar-widget .wid-title h4 {
   font-size: 24px;
