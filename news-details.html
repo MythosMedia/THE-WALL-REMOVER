@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@sanity/client@latest/dist/sanity-client.min.js"></script>
 
          <!-- Open Graph / Facebook -->
          <meta property="og:type" content="website" />
@@ -503,7 +504,6 @@
             </div>
         </section>
 
-        <!-- Footer Section Start -->
           <footer class="footer-section footer-bg">
             <div class="container">
                 <div class="footer-widgets-wrapper">
@@ -679,6 +679,31 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            // Step 3: Initialize the Sanity Client
+            const client = sanityClient({
+              projectId: 'o014bnkl', // replace with your project ID
+              dataset: 'production', // replace with your dataset
+              apiVersion: '2023-01-01', // use a specific version or "v1" if not concerned with versioning
+              useCdn: true, // `false` if you want to ensure fresh data
+            });
+        
+            // Step 4: Fetch data from Sanity
+            client.fetch('*[_type == "post"]').then((posts) => {
+              const postContainer = document.getElementById('posts');
+              posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.innerHTML = `
+                  <h2>${post.title}</h2>
+                  <p>${post.body}</p>
+                `;
+                postContainer.appendChild(postElement);
+              });
+            }).catch(err => {
+              console.error('Error fetching data from Sanity: ', err);
+            });
+          </script>
 
         <!--<< All JS Plugins >>-->
         <script src="assets/js/jquery-3.7.1.min.js"></script>
