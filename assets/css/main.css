@@ -7825,7 +7825,7 @@ input.main-search-input::placeholder {
   text-transform: capitalize;
 }
 .popular-posts .single-post-item .post-content h5 a:hover, .popular_posts .single-post-item .post-content h5 a:hover {
-  color: var(--theme);
+  color:#B04E31;
 }
 .popular-posts .single-post-item .post-content .post-date, .popular_posts .single-post-item .post-content .post-date {
   margin-top: 10px;
