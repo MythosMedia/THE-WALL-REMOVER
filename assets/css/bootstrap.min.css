@@ -9116,7 +9116,7 @@ fieldset:disabled .btn {
 
 .text-white {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) 
 }
 
 .text-body {
@@ -10601,7 +10601,7 @@ fieldset:disabled .btn {
         margin-bottom: auto !important
     }
     .mt-md-0 {
-        margin-top: 0 !important
+        /* margin-top: 0 !important */
     }
     .mt-md-1 {
         margin-top: .25rem !important
