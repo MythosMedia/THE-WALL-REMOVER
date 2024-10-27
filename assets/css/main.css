@@ -2105,9 +2105,17 @@ input.main-search-input::placeholder {
 }
 .hero-2 .line {
   position: absolute;
-  bottom: 20%;
-  left: 5%;
+  bottom: 0;
+  left: -443px;
   z-index: 2;
+}
+@media (max-width:2500px) {
+  .hero-2 .line {
+    position: absolute;
+    bottom: 0;
+    left: -654px;
+    z-index: 2;
+  }
 }
 @media (max-width: 1600px) {
   .hero-2 .line {
@@ -2182,8 +2190,12 @@ input.main-search-input::placeholder {
   width: 100%;
   z-index: -1;
   left: 48%;
-  background-color: var(--black);
-  opacity: 0.7;
+  /* background-color: var(--black); */
+  background-image: url(https://res.cloudinary.com/df2fe2yzk/image/upload/v1729866952/low-angle-view-skyscrapers-against-sky-min_rsgjrt.webp);
+  background-size: cover;
+  width: 52%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-2 .hero-content {
   position: relative;
@@ -9364,4 +9376,12 @@ p.sticky-label {
 }
 .p-t-b{
   padding: 0px 30px
+}
+.portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: 60px;
+}
+#myImage3{
+  width: 100%;
 }
