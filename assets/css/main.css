@@ -2162,7 +2162,7 @@ input.main-search-input::placeholder {
 .hero-2 .text p {
   color: var(--white);
 }
-.hero-2::before {
+/* .hero-2::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -2177,7 +2177,7 @@ input.main-search-input::placeholder {
   background-image: url(../../assets/img/hero/overlay-shape.jpg);
   width: 50%;
   z-index: -1;
-}
+} */
 .hero-2::after {
   position: absolute;
   top: 0;
@@ -8469,7 +8469,7 @@ p.sticky-label {
   color:#1F1F1E;
 }
 .portfolio-wrapper-2 .portfolio-content h3 a:hover {
-  color: var(--theme);
+  color: #db6b43;
 }
 .portfolio-wrapper-2 .portfolio-content:hover .content::before {
   opacity: 1;
