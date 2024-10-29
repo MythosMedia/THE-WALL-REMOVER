@@ -1,3 +1,15 @@
-<svg width="81" height="16" viewBox="0 0 81 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M80.7071 8.70711C81.0976 8.31658 81.0976 7.68342 80.7071 7.29289L74.3432 0.928932C73.9526 0.538408 73.3195 0.538408 72.9289 0.928932C72.5384 1.31946 72.5384 1.95262 72.9289 2.34315L78.5858 8L72.9289 13.6569C72.5384 14.0474 72.5384 14.6805 72.9289 15.0711C73.3195 15.4616 73.9526 15.4616 74.3432 15.0711L80.7071 8.70711ZM0 9H80V7H0V9Z" fill="#A6A182"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.88 47.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f37f52;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="2.82" y1="23.58" x2="252.71" y2="23.58"/>
+  <polyline class="cls-1" points="235.26 3.66 255.18 23.58 235.26 43.49"/>
 </svg>
