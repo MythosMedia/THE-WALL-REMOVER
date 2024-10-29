@@ -6252,7 +6252,8 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1399px) {
   .cta-banner-wrapper-2 .cta-image {
-    display: none;
+    /* display: none; */
+    margin-left: -37px;
   }
 }
 .cta-banner-wrapper-2 .cta-image .circle-shape {
@@ -6266,7 +6267,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1399px) {
   .cta-banner-wrapper-2 .section-title-area {
-    margin-left: 0;
+    margin-left: 176px;
   }
 }
 @media (max-width: 991px) {
@@ -9444,7 +9445,15 @@ p.sticky-label {
   margin-top: 41px;
 }
 }
+
 #myImage3{
   width: 100%;
-  margin-top: 13px;
+  margin-top: 18px;
+}
+@media (max-width:1728px) {
+  #myImage3{
+    width: 100%;
+    margin-top: 19px;
+  }
+ 
 }
