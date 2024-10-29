@@ -4836,6 +4836,9 @@ input.main-search-input::placeholder {
   margin-top: 0;
   background-color: var(--bg);
   border: none;
+  left: 133px;
+  position: relative;
+  margin-left: 55px;
 }
 .team-card-items.style-2 .team-content h3 a {
   color: var(--header);
@@ -9439,4 +9442,5 @@ p.sticky-label {
 }
 #myImage3{
   width: 100%;
+  margin-top: 13px;
 }
