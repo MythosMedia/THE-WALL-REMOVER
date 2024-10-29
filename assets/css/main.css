@@ -2122,6 +2122,10 @@ input.main-search-input::placeholder {
     display: none;
   }
 }
+.line2{
+  position: absolute;
+  left: -200px;
+}
 .hero-2 .star-shape {
   position: absolute;
   left: 3%;
@@ -4828,7 +4832,7 @@ input.main-search-input::placeholder {
   border: 1px solid var(--text);
 }
 .team-card-items .team-content .social-icon a:hover {
-  background-color: var(--theme);
+  background-color: #a65b0f;
   color: var(--white);
   border: 1px solid transparent;
 }
@@ -4844,7 +4848,7 @@ input.main-search-input::placeholder {
   color: var(--header);
 }
 .team-card-items.style-2 .team-content h3 a:hover {
-  color: var(--theme);
+  color: #a65b0f;
 }
 .team-card-items.style-2 .team-content p {
   color: var(--text);
