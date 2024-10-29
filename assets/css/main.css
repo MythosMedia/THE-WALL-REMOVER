@@ -8421,6 +8421,11 @@ p.sticky-label {
 .portfolio-wrapper-2 {
   margin-bottom: 30px;
 }
+@media (max-width:3100px) {
+  .portfolio-wrapper-2 {
+  margin-bottom: 88px;
+}
+}
 .portfolio-wrapper-2 .portfolio-content {
   display: flex;
   align-items: center;
@@ -9381,6 +9386,56 @@ p.sticky-label {
   position: absolute;
   left: 0;
   margin-top: 60px;
+}
+@media (max-width: 1003px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: 52px;
+}
+}
+
+@media (max-width: 3016px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: -26px;
+}
+}
+@media (max-width: 3100px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: -27px;
+}
+}
+@media (max-width: 1940px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: 27px;
+}
+}
+@media (max-width: 1038px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+}
+}
+@media (max-width: 3016px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: 65px;
+}
+}
+@media (max-width: 1600px) {
+  .portfolio-line{
+  position: absolute;
+  left: 0;
+  margin-top: 41px;
+}
 }
 #myImage3{
   width: 100%;
