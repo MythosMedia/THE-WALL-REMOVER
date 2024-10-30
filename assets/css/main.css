@@ -9190,7 +9190,7 @@ p.sticky-label {
 }
 .footer-bottom .footer-wrapper .footer-menu li a {
   color: rgba(255, 255, 255, 0.7019607843);
-  background-image: linear-gradient(var(--theme), var(--theme));
+  background-image: linear-gradient(#B04E31, #B04E31);
   background-position: 0 95%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
