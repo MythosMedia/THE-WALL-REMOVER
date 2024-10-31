@@ -4848,7 +4848,8 @@ input.main-search-input::placeholder {
 .team-card-items .team-image img {
   width: 100%;
   height: 100%;
-  border-radius: 0px;
+  border-radius: 8px;
+
 }
 .team-card-items .team-content {
   padding: 30px 15px;
@@ -4894,8 +4895,9 @@ input.main-search-input::placeholder {
   left: 133px;
   position: relative;
   margin-left: 55px;
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
+  border-radius: 8px;
 }
 /*media query for the card*/
 @media (max-width: 1200px) {
