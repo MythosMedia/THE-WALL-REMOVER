@@ -203,7 +203,7 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                             </li>
-                                           
+
                                             <li>
                                                 <a href="about.html">About</a>
                                             </li>
@@ -322,31 +322,33 @@
                         <div class="blog-post-details border-wrap mt-0">
                             <div class="single-blog-post post-details mt-0">
                                 <div class="post-content pt-0">
-    
+
                                     <!-- Dynamic Title -->
                                     <h2 class="mt-0" id="post-title">Post Title Here</h2>
-    
+
                                     <!-- Dynamic Post Meta -->
                                     <div class="post-meta mt-3">
-                                        <span><i class="fal fa-user"></i><span id="post-author">Author Name</span></span>
-                                        <span><i class="fal fa-calendar-alt"></i><span id="post-date">Post Date</span></span>
+                                        <span><i class="fal fa-user"></i><span id="post-author">Author
+                                                Name</span></span>
+                                        <span><i class="fal fa-calendar-alt"></i><span id="post-date">Post
+                                                Date</span></span>
                                     </div>
-    
+
                                     <!-- Dynamic Featured Image -->
                                     <div class="post-image" id="post-image">
                                         <!-- Image will be injected here -->
                                     </div>
-    
+
                                     <!-- Dynamic Content -->
                                     <div id="post-content">
                                         <!-- Post content will be injected here -->
                                     </div>
-    
+
                                 </div>
                             </div>
-    
+
                             <!-- Comment Form and Other Content (Optional) -->
-    
+
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
@@ -356,77 +358,77 @@
             </div>
         </div>
     </section>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.4/dist/purify.min.js"></script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Function to get URL parameters
-    function getQueryParam(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
-
-    // Get the post slug from the URL
-    const postSlug = getQueryParam('slug');
-
-    if (postSlug) {
-      // Fetch the specific post by slug
-      const postApiUrl = `https://blog.thewallremover.com/wp-json/wp/v2/posts?slug=${postSlug}&_embed`;
-
-      fetch(postApiUrl)
-        .then(response => response.json())
-        .then(posts => {
-          if (posts.length > 0) {
-            const post = posts[0];
-            // Inject the post data into the HTML
-
-            // Title
-            document.getElementById('post-title').innerHTML = post.title.rendered;
-
-            // Author
-            const authorName = post._embedded.author[0].name;
-            document.getElementById('post-author').textContent = authorName;
-
-            // Date
-            const postDate = new Date(post.date).toLocaleDateString();
-            document.getElementById('post-date').textContent = postDate;
-
-            // Featured Image
-            if (post._embedded['wp:featuredmedia']) {
-              const featuredMedia = post._embedded['wp:featuredmedia'][0];
-              const imageUrl = featuredMedia.source_url;
-              const imageAlt = featuredMedia.alt_text || post.title.rendered;
-
-              const imageHtml = `<img src="${imageUrl}" alt="${imageAlt}" style="object-fit: cover; width: 100%;">`;
-              document.getElementById('post-image').innerHTML = imageHtml;
-            } else {
-              document.getElementById('post-image').style.display = 'none';
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to get URL parameters
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
             }
 
-            // Content
-            const sanitizedContent = DOMPurify.sanitize(post.content.rendered);
-            document.getElementById('post-content').innerHTML = sanitizedContent;
+            // Get the post slug from the URL
+            const postSlug = getQueryParam('slug');
 
-          } else {
-            // Handle the case where no posts are found
-            document.querySelector('.blog-post-details').innerHTML = '<p>Sorry, the blog post was not found.</p>';
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching post:', error);
-          // Display an error message to the user
-          document.querySelector('.blog-post-details').innerHTML = '<p>Sorry, the blog post could not be loaded.</p>';
+            if (postSlug) {
+                // Fetch the specific post by slug
+                const postApiUrl = `https://blog.thewallremover.com/wp-json/wp/v2/posts?slug=${postSlug}&_embed`;
+
+                fetch(postApiUrl)
+                    .then(response => response.json())
+                    .then(posts => {
+                        if (posts.length > 0) {
+                            const post = posts[0];
+                            // Inject the post data into the HTML
+
+                            // Title
+                            document.getElementById('post-title').innerHTML = post.title.rendered;
+
+                            // Author
+                            const authorName = post._embedded.author[0].name;
+                            document.getElementById('post-author').textContent = authorName;
+
+                            // Date
+                            const postDate = new Date(post.date).toLocaleDateString();
+                            document.getElementById('post-date').textContent = postDate;
+
+                            // Featured Image
+                            if (post._embedded['wp:featuredmedia']) {
+                                const featuredMedia = post._embedded['wp:featuredmedia'][0];
+                                const imageUrl = featuredMedia.source_url;
+                                const imageAlt = featuredMedia.alt_text || post.title.rendered;
+
+                                const imageHtml = `<img src="${imageUrl}" alt="${imageAlt}" style="object-fit: cover; width: 100%;">`;
+                                document.getElementById('post-image').innerHTML = imageHtml;
+                            } else {
+                                document.getElementById('post-image').style.display = 'none';
+                            }
+
+                            // Content
+                            const sanitizedContent = DOMPurify.sanitize(post.content.rendered);
+                            document.getElementById('post-content').innerHTML = sanitizedContent;
+
+                        } else {
+                            // Handle the case where no posts are found
+                            document.querySelector('.blog-post-details').innerHTML = '<p>Sorry, the blog post was not found.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching post:', error);
+                        // Display an error message to the user
+                        document.querySelector('.blog-post-details').innerHTML = '<p>Sorry, the blog post could not be loaded.</p>';
+                    });
+            } else {
+                // If no slug is provided in the URL
+                document.querySelector('.blog-post-details').innerHTML = '<p>No blog post specified.</p>';
+            }
         });
-    } else {
-      // If no slug is provided in the URL
-      document.querySelector('.blog-post-details').innerHTML = '<p>No blog post specified.</p>';
-    }
-  });
-</script>
+    </script>
 
-    
-      
+
+
     <!-- Cta Section Start -->
     <section class="cta-banner-section-2">
         <div class="container">
