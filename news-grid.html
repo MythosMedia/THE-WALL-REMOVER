@@ -207,9 +207,10 @@
                                                 </a>
                                             </li>
 
-                                             <li>
+                                            <li>
                                                 <a href="constructa.html">Constructa</a>
-                                            </li><li>
+                                            </li>
+                                            <li>
                                                 <a href="about.html">About</a>
                                             </li>
                                             <li>
@@ -334,10 +335,11 @@
     <script>
         // Replace with your WordPress subdomain URL
         const wpApiUrl = 'https://blog.thewallremover.com/wp-json/wp/v2/posts?_embed';
-
         function loadBlogPosts() {
             fetch(wpApiUrl)
-                .then(response => response.json())
+                .then(response => {
+                    return response.json()
+                })
                 .then(posts => {
                     const blogPostsContainer = document.getElementById('blog-posts');
                     posts.forEach(post => {
